@@ -11,3 +11,5 @@ app.use(routes);
 app.listen(app.get('port'), (): void => {
   console.log(`${config.name} listening on port ${config.port}`);
 });
+
+export { app };

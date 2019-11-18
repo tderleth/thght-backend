@@ -11,7 +11,8 @@
     "format": "prettier --write '**/*.{css,html,js,jsx,json,md,ts,tsx,yml,yaml}'",
     "lint": "eslint '**/*.{js,jsx,ts,tsx}'",
     "prebuild": "npm run clean",
-    "start": "node dist/app.js"
+    "start": "node dist/app.js",
+    "test": "jest --colors --runInBand --verbose --silent --forceExit"
   },
   "repository": {
     "type": "git",
@@ -28,7 +29,9 @@
   "devDependencies": {
     "@types/dotenv": "^8.2.0",
     "@types/express": "^4.17.1",
+    "@types/jest": "^24.0.23",
     "@types/node": "^12.12.8",
+    "@types/supertest": "^2.0.8",
     "@typescript-eslint/eslint-plugin": "^1.13.0",
     "@typescript-eslint/parser": "^1.13.0",
     "eslint": "^5.16.0",
@@ -37,9 +40,12 @@
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-prettier": "^3.1.1",
     "husky": "^3.1.0",
+    "jest": "^24.9.0",
     "prettier": "^1.17.1",
     "pretty-quick": "^2.0.0",
     "rimraf": "^3.0.0",
+    "supertest": "^4.0.2",
+    "ts-jest": "^24.1.0",
     "ts-node-dev": "^1.0.0-pre.44",
     "typescript": "^3.6.4"
   }
