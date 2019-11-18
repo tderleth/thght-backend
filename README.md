@@ -23,6 +23,12 @@ npm install
 
 Copy `.env.sample` to `.env` and set environment variables.
 
+### Testing
+
+```bash
+make test
+```
+
 ### Production
 
 TBD
@@ -31,16 +37,4 @@ TBD
 
 ```bash
 npm run lint
-```
-
-#### JavaScript
-
-```bash
-npm run lint:js
-```
-
-#### Markdown
-
-```bash
-npm run lint:md
 ```
