@@ -23,7 +23,8 @@
   "homepage": "https://github.com/tderleth/thght-backend#readme",
   "dependencies": {
     "dotenv": "^8.2.0",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "helmet": "^3.21.2"
   },
   "devDependencies": {
     "@types/dotenv": "^8.2.0",
