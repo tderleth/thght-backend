@@ -1,0 +1,16 @@
+on:
+  push:
+    branches-ignore:
+    - 'master'     
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    name: tests
+    steps:
+      - uses: actions/checkout@master
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 12.x 
+      - run: npm install
+      - run: npm test
