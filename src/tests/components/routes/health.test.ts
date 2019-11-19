@@ -8,7 +8,7 @@ describe('component/routes/health', () => {
     const { body } = await request(app)
       .get('/health')
       .set('Accept', 'application/json')
-      .expect(500);
+      .expect(200);
 
     expect(body).toEqual({
       status: 'OK',
