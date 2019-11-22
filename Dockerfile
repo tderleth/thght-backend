@@ -7,7 +7,7 @@ FROM node:12.10-alpine as build
 ARG ENVIRONMENT=development
 COPY package*.json ./
 COPY ts*.json ./
-RUN npm install --$ENVIRONMENT --loglevel=silent
+RUN npm install --development --loglevel=silent
 COPY src/ ./src/
 COPY files/ ./files/
 RUN npm run build
