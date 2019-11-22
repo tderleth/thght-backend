@@ -21,8 +21,10 @@ npm install
 
 ### Development
 
-1. Copy `.env.sample` to `.env` and set environment variables
-2. Run `docker-compose up`
+```
+$ cp .env.sample .env
+$ docker-compose up
+```
 
 ### Testing
 
