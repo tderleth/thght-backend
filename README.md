@@ -21,17 +21,14 @@ npm install
 
 ### Development
 
-Copy `.env.sample` to `.env` and set environment variables.
+1. Copy `.env.sample` to `.env` and set environment variables
+2. Run `docker-compose up`
 
 ### Testing
 
 ```bash
 make test
 ```
-
-### Production
-
-TBD
 
 ### Linting
 
