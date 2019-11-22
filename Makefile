@@ -3,10 +3,10 @@ REPOSITORY=thght
 REGISTRY=thomasderleth
 
 build-dev:
-	docker build --build-arg ENVIRONMENT=development -t ${REPOSITORY}:${REV} .
+	docker build --build-arg ENVIRONMENT=development -t ${REGISTRY}/${REPOSITORY}:${REV} .
 
 build-prod:
-	docker build --build-arg ENVIRONMENT=production -t ${REPOSITORY}:${REV} .
+	docker build --build-arg ENVIRONMENT=production -t ${REGISTRY}/${REPOSITORY}:${REV} .
 
 test: build-dev
 	docker run ${REPOSITORY}:${REV} npm run test
