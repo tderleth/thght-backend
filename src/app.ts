@@ -11,7 +11,7 @@ app.use(helmet());
 app.use(routes);
 
 app.listen(app.get('port'), (): void => {
-  console.log(`${config.name} listening on port ${config.port}`);
+  console.log(`${config.name} listening on port ${config.port} and root is ${config.root}`);
 });
 
 export { app };

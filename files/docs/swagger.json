@@ -1,0 +1,22 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "thght",
+    "description": "This page hosts API documentation for thght backend.",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/health": {
+      "get": {
+        "summary": "Returns health state of  service.",
+        "description": "This endpoint is used by the Load Balancer in order to determin the health of the service.",
+        "produces": ["application/json"],
+        "responses": {
+          "200": {
+            "status": "OK"
+          }
+        }
+      }
+    }
+  }
+}
