@@ -9,7 +9,7 @@ build-prod:
 	docker build --build-arg ENVIRONMENT=production -t ${REGISTRY}/${REPOSITORY}:${REV} .
 
 test: build-dev
-	docker run ${REPOSITORY}:${REV} npm run test
+	docker run ${REGISTRY}/${REPOSITORY}:${REV} npm run test
 
 docker-login:
 	docker login --username ${DOCKER_USERNAME} --password ${DOCKER_PASSWORD}
