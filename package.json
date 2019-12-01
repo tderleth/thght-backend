@@ -7,7 +7,7 @@
     "build": "tsc",
     "clean": "rimraf ./dist",
     "develop": "ts-node-dev --no-notify --respawn --transpileOnly --ignore-watch node_modules src/app.ts",
-    "fix": "npm run lint:js -- --fix",
+    "fix": "npm run lint -- --fix",
     "format": "prettier --write '**/*.{css,html,js,jsx,json,md,ts,tsx,yml,yaml}'",
     "lint": "eslint '**/*.{js,jsx,ts,tsx}'",
     "prebuild": "npm run clean",
