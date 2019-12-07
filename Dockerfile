@@ -14,6 +14,7 @@ RUN npm run build
 FROM node:12.10-alpine
 WORKDIR /usr/src/app
 COPY package*.json ./
+COPY knexfile.ts ./
 COPY --from=dependencies /node_modules node_modules
 COPY --from=build /dist dist
 COPY files/ ./files/
