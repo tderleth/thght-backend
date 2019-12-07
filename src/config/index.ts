@@ -13,10 +13,17 @@ interface IConfig {
 }
 
 const config: IConfig = {
+  database: {
+    database: ENV.DB_DATABASE || 'thght',
+    host: ENV.DB_HOST || 'database',
+    password: ENV.DB_PASSWORD || 'example',
+    port: parseInt(ENV.DB_PORT || '5432', 10),
+    user: ENV.DB_USER || 'postgres',
+  },
   env: ENV.NODE_ENV || 'development',
-  logLevel: ENV.PROTOCOL || 'info',
+  logLevel: ENV.LOG_LEVEL || 'info',
   name: ENV.NAME || 'thght-backend',
-  port: ENV.PORT || 3000,
+  port: parseInt(ENV.PORT || '5432', 10),
   protocol: ENV.PROTOCOL || 'https',
   root: rootPath,
 };

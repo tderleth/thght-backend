@@ -1,0 +1,32 @@
+version: '2.1'
+services:
+  service:
+    container_name: thght
+    build:
+      context: .
+      args:
+        - ENVIRONMENT=DEVELOPMENT
+    command: npm run test
+    depends_on:
+      postgres:
+        condition: service_healthy
+    env_file:
+      - .env
+
+  postgres:
+    container_name: database
+    image: postgres:11.1-alpine
+    logging:
+      driver: none
+    restart: always
+    environment:
+      - POSTGRES_DB=thght
+      - POSTGRES_PASSWORD=example
+      - POSTGRES_USER=postgres
+    healthcheck:
+      test: ['CMD-SHELL', 'pg_isready -U postgres']
+      interval: 5s
+      timeout: 2s
+      retries: 5
+    ports:
+      - '${DB_PORT}:5432'

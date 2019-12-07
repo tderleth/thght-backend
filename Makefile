@@ -8,8 +8,8 @@ build-dev:
 build-prod:
 	docker build --build-arg ENVIRONMENT=production -t ${REGISTRY}/${REPOSITORY}:${REV} .
 
-test: build-dev
-	docker run ${REGISTRY}/${REPOSITORY}:${REV} npm run test
+test:
+	docker-compose -f ./docker-compose.test.yml up --build --renew-anon-volumes --abort-on-container-exit --remove-orphans
 
 docker-login:
 	docker login --username ${DOCKER_USERNAME} --password ${DOCKER_PASSWORD}
