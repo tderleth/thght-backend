@@ -10,8 +10,6 @@ services:
     depends_on:
       postgres:
         condition: service_healthy
-    env_file:
-      - .env
 
   postgres:
     container_name: database
@@ -29,4 +27,4 @@ services:
       timeout: 2s
       retries: 5
     ports:
-      - '${DB_PORT}:5432'
+      - '5432:5432'
