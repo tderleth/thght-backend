@@ -2,6 +2,10 @@
 
 This repository entails the backend for thght app. It's a minimalistic express application that utilises knex as a query builder tool. API docs can be found under the `/docs` route.
 
+## States
+
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=thght-birds_thght-backend&metric=alert_status)](https://sonarcloud.io/dashboard?id=thght-birds_thght-backend)
+
 ## Table of contents
 
 - [Requirements](#requirements)
