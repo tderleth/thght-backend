@@ -13,6 +13,7 @@
     "lint": "eslint '**/*.{js,jsx,ts,tsx}'",
     "prebuild": "npm run clean",
     "start": "node dist/src/app.js",
+    "test:ci": "npm test && codecov",
     "test": "jest --colors --coverage --detectOpenHandles --forceExit --notify --runInBand --verbose"
   },
   "repository": {

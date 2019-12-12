@@ -6,7 +6,7 @@ services:
       context: .
       args:
         - ENVIRONMENT=DEVELOPMENT
-    command: npm run test
+    command: npm run test:ci
     depends_on:
       postgres:
         condition: service_healthy
