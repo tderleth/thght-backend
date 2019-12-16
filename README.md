@@ -1,8 +1,8 @@
 # thght backend
 
-[![Maintainability](https://api.codeclimate.com/v1/badges/50080b87bec57763e26f/maintainability)](https://codeclimate.com/github/thght-birds/thght-backend/maintainability)
+[![Maintainability](https://api.codeclimate.com/v1/badges/82303f3f3de8beffca2a/maintainability)](https://codeclimate.com/github/thght-birds/thght-backend/maintainability) [![Test Coverage](https://api.codeclimate.com/v1/badges/82303f3f3de8beffca2a/test_coverage)](https://codeclimate.com/github/thght-birds/thght-backend/test_coverage) [![dependencies Status](https://img.shields.io/david/thght-birds/thght-backend.svg)](https://david-dm.org/thght-birds/thght-backend) [![devDependencies Status](https://img.shields.io/david/dev/thght-birds/thght-backend.svg)](https://david-dm.org/thght-birds/thght-backend?type=dev)
 
-This repository entails the backend for thght app. It's a minimalistic express application that utilises knex as a query builder tool. API docs can be found under the `/docs` route.
+This repository entails the backend for thght backend. It's a minimalistic express backendlication that utilises knex as a query builder tool. API docs can be found under the `/docs` route.
 
 ## Table of contents
 
